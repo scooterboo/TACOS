@@ -412,7 +412,7 @@ function Grab(name,distances)
     gobject_zdir=Vector(room.objects[name].zdir.x,room.objects[name].zdir.y,room.objects[name].zdir.z);
     
     if(distances==0){
-      gdistance = distance(player.cursor_pos,player.head_pos);
+      gdistance = distance(room.objects[name].pos,player.head_pos);
     }else{
       gdistance=distances;
     }
